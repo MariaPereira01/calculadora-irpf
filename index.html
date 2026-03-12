@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IRPF</title>
+
+</head>
+
+<body>
+    <nav id="menu-horizontal">
+        <ul>
+            <li>Cálculo Mensal</li>
+            <li class="sociedade">
+                Simulação de Alíquota Efetiva
+            </li>
+        </ul>
+    </nav>
+
+    <section class="caixa">
+        <h2 id="tituloprincipal">Realize seu Cálculo aqui!</h2>
+
+        <label>Salário mensal (R$)</label>
+        <input type="number" id="salario" placeholder="Ex: 5000">
+
+        <section class="cbotoes">
+            <button onclick="calcular()">Calcular</button>
+            <button onclick="limpar()">Limpar</button>
+        </section>
+
+        <div class="resultado">
+            <p>Imposto devido: R$ <span id="imposto">0.00</span></p>
+            <p>Alíquota efetiva: <span id="aliquota">0%</span></p>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 – Programação pra Web</p>
+    </footer>
+
+
+
+</body>
+
+</html>
